@@ -4,8 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aula 2</title>
+  <style>
+    .hotelName {
+      width: 230px;
+      height: 50px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3em;
+    }
+    .box-rooms {
+      width: 230px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rooms {
+      text-align: center;
+    }
+    .num {
+      margin-top: 30px;
+      font-size: 3em;
+    }
+  </style>
 </head>
 <body>
+  <div class="content">
+    <div>
+      <h1>hotel availability</h1>
+    </div>
+    <div class="hotelName"></div>
+    <div class="box-rooms">
+      <div>
+        <div class="rooms num">15</div>
+        <div class="rooms">
+          <strong>rooms left</strong>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="./aulaJS-2.js"></script>
 </body>
