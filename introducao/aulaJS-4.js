@@ -2,7 +2,7 @@
 
 /*
 
-  nome          operador
+  nome                operador
   adicao                +
   subtração             -
   divisao               /
