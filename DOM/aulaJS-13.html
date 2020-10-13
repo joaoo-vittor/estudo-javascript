@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 13</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul, ol, li {
+      list-style: none;
+      background-color: #008000;
+    }
+
+    ul > li {
+      font-size: 20px;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .cool {
+      background-color: #808080;
+    }
+
+    .hot {
+      background-color: #ff0000;
+    }
+
+    .complete {
+      background-color: #4b0082;
+    }
+
+    .box {
+      margin: 50px;
+      width: 300px;
+    }
+
+    .bgc-black {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      background-color: #000;
+    }
+    
+    #scriptResults {
+      border-radius: 10px;
+      width: 250px;
+      height: 30px;
+      background-color: #fff;
+    }
+
+    p {
+      padding-left: 10px;
+      height: 30px;
+      line-height: 30px;
+      color: #000;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <ul>
+      <li id="one" class="hot">
+        <em>fresh</em>
+      </li>
+      <li id="two" class="hot">
+        pine nuts
+      </li>
+      <li id="three" class="hot">
+        honey
+      </li>
+      <li id="four">
+        balsamic vinegar
+      </li>
+    </ul>
+    <div class="bgc-black">
+      <div id="scriptResults"></div>
+    </div>
+  </div>
+  <script src="./aulaJS-13.js"></script>
+</body>
+</html>
