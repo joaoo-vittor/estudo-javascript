@@ -1,0 +1,27 @@
+<%- include('includes/head') %>
+
+<div class="container">
+  <div class="content">
+    <h1>
+      <%= nestaRota %>
+    </h1>
+
+    <!-- <% if(typeof titulo !== undefined) { %>
+      <%=titulo%>
+    <% } else {%>
+      O titulo não foi enviado
+    <% } %> -->
+
+    <!-- <% numeros.forEach(element => { %>
+      <%= element %> <br>
+    <% }); %> -->
+
+    <form action="/" method="post">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<%- include('includes/headEnd') %>
