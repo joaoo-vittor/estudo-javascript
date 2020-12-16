@@ -1,0 +1,213 @@
+/* Reset */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  box-sizing: border-box;
+  background-color: rgb(189, 174, 174);
+  overflow-x: hidden;
+}
+
+
+ul, ol, li {
+  list-style: none;
+  padding: 0;
+}
+/* reset end */
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.nav-bar {
+  background-color: rgb(104, 91, 91);
+  width: 100%;
+}
+
+.container-nav {
+  height: 80px;
+  margin: 0px 30px 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-home {
+  display: flex;
+  justify-content: center;
+}
+
+.link-home > a {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-login > a {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.btn-login {
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(59, 55, 55);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: rgba(59, 55, 55, 0.9);
+}
+
+a {
+  text-decoration: none;
+}
+
+.error {
+  font-size: 2em;
+}
+
+.error-404 {
+  font-size: 4em;
+}
+
+.info-ag {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+.erro-api {
+  line-height: 40px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: rgba(243, 9, 9, 0.493);
+  margin-bottom: 20px;
+}
+
+.success-api {
+  line-height: 40px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: rgba(243, 161, 9, 0.493);
+  margin-bottom: 20px;
+}
+
+.erro-api > p {
+  font-size: 1.5em;
+}
+
+table.table {
+  font-size: 1.4em;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.content-login {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.linha {
+  display: flex;
+  justify-content: center;
+}
+
+.campo-entrada  label {
+  font-size: 1.2em;
+  margin-top: 10px;
+  display: block;
+  text-align: left;
+}
+
+.campo-entrada button {
+  outline: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.campo-entrada {
+  margin: 10px 50px;
+}
+
+.campo-entrada  input {
+  padding-left: 5px;
+  font-size: 1.7em;
+  width: 310px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.campo-entrada p {
+  font-size: 1.3em;
+  text-align: left;
+}
+
+.btn-criar-conta {
+  width: 170px;
+  height: 40px;
+}
+
+.btn-entrar {
+  width: 80px;
+  height: 40px;
+}
+
+.btn-style {
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3em;
+  background-color: rgb(87, 86, 92);
+  border: none;
+}
+
+.btn-style:hover {
+  background-color: rgba(87, 86, 92, 0.8);
+}
+
+.info-login-cadastro p {
+  font-size: 1.5em;
+}
+
+.correcao-espaco {
+  margin-bottom: 33.6px;
+}
+
+.login {
+  display: flex;
+}
+
+.cad-contato {
+  width: 200px;
+  margin-right: 10px;
+}

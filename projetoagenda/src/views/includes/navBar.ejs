@@ -1,0 +1,29 @@
+<nav class="nav-bar">
+  <div class="container-nav">
+    <div class="link-home">
+      <a href="/" >Agenda</a>
+    </div>
+    <div >
+      <ul class="login">
+        <% if(user) { %>
+            <li>
+              <div class="btn-login cad-contato">
+                <a href="/contato/index" class="link-login">Cadastrar Contato</a>
+              </div>
+            </li>
+            <li>
+              <div class="btn-login">
+                <a href="/login/logout" class="link-login">Sair</a>
+              </div>
+            </li>
+          <% } else { %>
+            <li>
+              <div class="btn-login">
+                <a href="/login" class="link-login">Login</a>
+              </div>
+            </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
