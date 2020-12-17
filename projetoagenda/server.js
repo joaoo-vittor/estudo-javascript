@@ -15,7 +15,12 @@ const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/midd
 
 
 // conexão com mongoDB
-mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.CONNECTIONSTRING,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true ,
+    useFindAndModify: false
+  })
   .then(resp => {
     // console.log('Conectei a Base de Dados');
     app.emit('Pronto');
@@ -41,7 +46,6 @@ app.use(express.json());
 
 // Conteudo estatico
 app.use(express.static(path.resolve(__dirname, 'public')));
-
 
 // Configurando a sessão
 const sessionOptions = session({

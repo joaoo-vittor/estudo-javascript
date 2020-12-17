@@ -1,0 +1,38 @@
+<%- include('includes/headStart') %>
+
+<%- include('includes/navBar') %>
+
+
+<div class="container">
+  <div class="content contato-content">
+    <h1>Contato</h1>
+    <p class="info-ag">Cadastre um contato abaixo</p>
+
+    <%- include('includes/messages') %>
+
+    <div class="campo-entrada campo-entrada-contato">
+
+      <% if(contato._id) { %>
+        <form action="/contato/edit/<%= contato._id %>" method="post">
+      <% } else { %>
+        <form action="/contato/register" method="post">
+      <% } %>
+
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <label for="nome">Nome</label>
+        <input value="<%= contato.nome %>" type="text" name="nome">
+        <label for="sobrenome">Sobrenome</label>
+        <input value="<%= contato.sobrenome %>" type="text" name="sobrenome">
+        <label for="email">E-mail</label>
+        <input value="<%= contato.email %>" type="email" name="email">
+        <label for="telefone">Telefone</label>
+        <input value="<%= contato.telefone %>" type="tel" name="telefone">
+        <button class="btn-criar-conta btn-style">Salvar</button>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<%- include('includes/headEnd') %>

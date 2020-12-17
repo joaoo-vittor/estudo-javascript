@@ -27,10 +27,16 @@ ul, ol, li {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
-  width: 600px;
+  width: 900px;
   background-color: #fff;
   border-radius: 10px;
   padding: 20px 20px;
+}
+
+.tabela-contato {
+  text-align: start;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-bar {
@@ -112,6 +118,10 @@ a {
   margin-bottom: 20px;
 }
 
+.success-api p {
+  font-size: 1.5em;
+}
+
 .erro-api > p {
   font-size: 1.5em;
 }
@@ -138,7 +148,7 @@ table.table {
 }
 
 .campo-entrada  label {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-top: 10px;
   display: block;
   text-align: left;
@@ -162,6 +172,25 @@ table.table {
   border-radius: 5px;
   border: 1px solid #000;
   outline: none;
+}
+
+.campo-entrada-contato input {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.contato-content {
+  width: 500px;
+}
+
+.campo-entrada-contato label {
+  font-size: 1.5em;
+  margin-top: 25px;
+}
+
+.campo-entrada-contato button {
+  margin-top: 25px;
 }
 
 .campo-entrada p {
@@ -211,3 +240,37 @@ table.table {
   width: 200px;
   margin-right: 10px;
 }
+
+.edt-del {
+  padding: 5px 9px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.edita {
+  background-color: rgba(0, 128, 0, 0.678);
+  margin-left: 15px;
+}
+
+.edita:hover {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+.deleta {
+  background-color: rgba(243, 9, 9, 0.693);
+}
+
+.deleta:hover {
+  background-color: rgba(243, 9, 9, 0.493);
+}
+
+.msg-error {
+  padding-left: 3px;
+  margin-top: 3px;
+  font-size: 1.2em;
+  text-align: start;
+}
+
+
+
+

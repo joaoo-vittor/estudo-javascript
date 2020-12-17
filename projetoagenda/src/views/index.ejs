@@ -11,24 +11,26 @@
 
     <div class="tabela-contato">
       <table class="table">
-        <tr>
-          <td>João</td>
-          <td>Vitor</td>
-          <td>321321321</td>
-          <td>meuEmail@gmail.com</td>
-        </tr>
-        <tr>
-          <td>João</td>
-          <td>Vitor</td>
-          <td>321321321</td>
-          <td>meuEmail@gmail.com</td>
-        </tr>
-        <tr>
-          <td>João</td>
-          <td>Vitor</td>
-          <td>321321321</td>
-          <td>meuEmail@gmail.com</td>
-        </tr>
+        <% if(contatos.length > 0) { %>
+          <% contatos.forEach(contato => { %>
+
+            <tr>
+              <td><%= contato.nome  %></td>
+              <td><%= contato.sobrenome  %></td>
+              <td><%= contato.telefone  %></td>
+              <td><%= contato.email  %></td>
+              <td>
+                <a class="edt-del edita" href="/contato/<%= contato._id %>">Editar</a>
+              </td>
+              <td>
+                <a class="edt-del deleta" href="/contato/delete/<%= contato._id %>">Deleter</a>
+              </td>
+            </tr>
+
+          <% }); %>
+        <% } else { %>
+          <h1>Você não tem contato(s) cadastrado(s)</h1>
+        <% } %>
       </table>
     </div>
   </div>
