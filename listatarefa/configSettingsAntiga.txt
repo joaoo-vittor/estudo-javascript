@@ -1,0 +1,22 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "debug.onTaskErrors": "abort",
+  "explorer.confirmDragAndDrop": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.associations": {
+      "*.js": "javascript"
+  },
+  "window.zoomLevel": 0,
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll": true
+  }
+}
