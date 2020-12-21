@@ -1,5 +1,5 @@
 *.py
-*.txt
+snippets.txt
 .vscode
 .editorconfig
 .env

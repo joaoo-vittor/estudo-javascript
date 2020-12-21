@@ -1,0 +1,7 @@
+sudo apt purge --auto-remove nodejs -y
+sudo rm /etc/apt/sources.list.d/nodesource.list*
+
+sudo apt install curl -y
+
+curl -sL http://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt install nodejs -y
