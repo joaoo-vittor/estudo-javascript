@@ -1,0 +1,43 @@
+/* tarefas start */
+
+.tarefas {
+  margin-top: 30px;
+}
+
+.tarefas li {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.tarefas li:hover {
+  background-color: #51c5de;
+}
+
+.tarefas li:hover .edit,
+.tarefas li:hover .delete {
+  color: #000;
+}
+
+.tarefas li .edit {
+  margin: 0px 5px;
+  cursor: pointer;
+  color: #51c5de;
+  transition: 0.5s;
+}
+
+.tarefas li .delete {
+  margin: 0px 5px;
+  cursor: pointer;
+  color: #f04c64;
+  transition: 0.5s;
+}
+
+.tarefas li span {
+  display: flex;
+  align-items: center;
+}
+
+/* tarefas end */

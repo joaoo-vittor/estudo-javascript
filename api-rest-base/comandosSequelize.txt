@@ -1,0 +1,22 @@
+### Cria um Migration
+$ npx sequelize migration:create --name=<NOME_DA_MIGRATION>
+
+
+### Cria a Base de Dado
+$ npx sequelize db:create
+
+
+### Executa a Migration
+$ npx sequelize db:migrate
+
+
+### Desfazer a migration
+$ npx sequelize db:migrate:undo
+
+
+### Criar Seeds
+$ npx sequelize seed:generate --name criar-usuarios
+
+
+### Executando a Seeds
+$ npx sequelize db:seed:all
