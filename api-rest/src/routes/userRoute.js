@@ -14,7 +14,7 @@ const router = new Router();
 // router.delete('/:id', userController.delete);
 
 
-router.post('/', loginRequired, userController.store);
+router.post('/', userController.store);
 router.put('/', loginRequired, userController.updade);
 router.delete('/', loginRequired, userController.delete);
 
